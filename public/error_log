@@ -1,0 +1,94 @@
+[09-Sep-2025 17:44:28 UTC] PHP Warning:  parse_ini_file(/home/galaxylifeline/public_html/config.ini): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/app/config/config.php on line 2
+[09-Sep-2025 17:44:31 UTC] PHP Warning:  parse_ini_file(/home/galaxylifeline/public_html/config.ini): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/app/config/config.php on line 2
+[11-Sep-2025 19:48:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Enrolls::getagreementitems(), 0 passed in /home/galaxylifeline/public_html/app/libraries/Core.php on line 43 and exactly 1 expected in /home/galaxylifeline/public_html/app/controllers/Enrolls.php:673
+Stack trace:
+#0 /home/galaxylifeline/public_html/app/libraries/Core.php(43): Enrolls->getagreementitems()
+#1 /home/galaxylifeline/public_html/public/index.php(5): Core->__construct()
+#2 {main}
+  thrown in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 673
+[11-Sep-2025 19:49:03 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Enrolls::getagreementitems(), 0 passed in /home/galaxylifeline/public_html/app/libraries/Core.php on line 43 and exactly 1 expected in /home/galaxylifeline/public_html/app/controllers/Enrolls.php:673
+Stack trace:
+#0 /home/galaxylifeline/public_html/app/libraries/Core.php(43): Enrolls->getagreementitems()
+#1 /home/galaxylifeline/public_html/public/index.php(5): Core->__construct()
+#2 {main}
+  thrown in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 673
+[12-Sep-2025 17:06:53 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:06:53 UTC] PHP Warning:  file_get_contents(https://www.google.com/recaptcha/api/siteverify): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:24:17 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:24:17 UTC] PHP Warning:  file_get_contents(https://www.google.com/recaptcha/api/siteverify): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:24:30 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:24:30 UTC] PHP Warning:  file_get_contents(https://www.google.com/recaptcha/api/siteverify): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:27:20 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:27:20 UTC] PHP Warning:  file_get_contents(https://www.google.com/recaptcha/api/siteverify): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:53:52 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[12-Sep-2025 17:53:52 UTC] PHP Warning:  file_get_contents(https://www.google.com/recaptcha/api/siteverify): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/controllers/Enrolls.php on line 90
+[21-Sep-2025 21:36:30 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:30 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:30 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:31 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:31 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:31 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:36:47 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:38:24 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:38:24 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:38:24 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:39:59 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:39:59 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:39:59 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:44:38 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:44:38 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:44:38 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:22 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:22 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:22 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:24 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:24 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:45:24 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:58 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:58 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:58 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:59 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:59 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:47:59 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:48:08 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:48:08 UTC] PHP Warning:  require(APPROOT/views/inc/header.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 21:48:08 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/header.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 5
+[21-Sep-2025 22:24:33 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/galaxylifeline/public_html/public/privacy.php on line 213
+[21-Sep-2025 22:24:50 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:24:50 UTC] PHP Warning:  require(APPROOT/views/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:24:50 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/views/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:03 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:03 UTC] PHP Warning:  require(APPROOT/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:03 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:09 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:09 UTC] PHP Warning:  require(APPROOT/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:09 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOT/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:31 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:31 UTC] PHP Warning:  require(APPROOTpublic/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:31 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOTpublic/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:34 UTC] PHP Warning:  Use of undefined constant APPROOT - assumed 'APPROOT' (this will throw an Error in a future version of PHP) in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:34 UTC] PHP Warning:  require(APPROOTpublic/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:34 UTC] PHP Fatal error:  require(): Failed opening required 'APPROOTpublic/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:57 UTC] PHP Warning:  require(public/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:25:57 UTC] PHP Fatal error:  require(): Failed opening required 'public/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:26:20 UTC] PHP Warning:  require(/public_html/public/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:26:20 UTC] PHP Fatal error:  require(): Failed opening required '/public_html/public/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:26:25 UTC] PHP Warning:  require(/public_html/public/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:26:25 UTC] PHP Fatal error:  require(): Failed opening required '/public_html/public/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:27:27 UTC] PHP Warning:  require(/public_html/public/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:27:27 UTC] PHP Fatal error:  require(): Failed opening required '/public_html/public/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:35:00 UTC] PHP Warning:  require(/public_html/public/inc/footer.php): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:35:00 UTC] PHP Fatal error:  require(): Failed opening required '/public_html/public/inc/footer.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/galaxylifeline/public_html/public/privacy.php on line 211
+[21-Sep-2025 22:46:36 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/galaxylifeline/public_html/app/views/pages/privacy.php on line 212
+[21-Sep-2025 22:46:40 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/galaxylifeline/public_html/app/views/pages/privacy.php on line 212
+[21-Sep-2025 22:53:28 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/galaxylifeline/public_html/app/views/pages/privacy.php on line 10
+[22-Sep-2025 16:07:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'Privacy' does not have a method 'index' in /home/galaxylifeline/public_html/app/libraries/Core.php on line 43
+[22-Sep-2025 16:12:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/galaxylifeline/public_html/app/views/pages/privacy.php on line 44
+[22-Sep-2025 16:13:23 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/galaxylifeline/public_html/app/views/pages/privacy.php on line 44
+[23-Sep-2025 15:37:17 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/galaxylifeline/public_html/app/helpers/APIprocess.php on line 223
+[23-Sep-2025 15:37:17 UTC] PHP Warning:  file_get_contents(https://galaxylifeline.com/uploads/G-CU4C0004/ID_G-CU4C0004.jpg): failed to open stream: no suitable wrapper could be found in /home/galaxylifeline/public_html/app/helpers/APIprocess.php on line 223

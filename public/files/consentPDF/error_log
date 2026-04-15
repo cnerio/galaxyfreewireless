@@ -1,0 +1,1 @@
+[23-Sep-2025 11:37:17 America/New_York] PHP Warning:  file_get_contents(/home/galaxylifeline/public_html/public/uploads/G-CU4C0004/Consent_G-CU4C0004.pdf): failed to open stream: No such file or directory in /home/galaxylifeline/public_html/public/files/consentPDF/index.php on line 520

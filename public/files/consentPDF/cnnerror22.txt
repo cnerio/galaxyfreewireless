@@ -1,0 +1,5 @@
+PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\wamp64\www\TruewirelessLifeline\public\files\consentPDF\index.php:598
+Stack trace:
+#0 C:\wamp64\www\TruewirelessLifeline\public\files\consentPDF\index.php(598): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue))
+#1 C:\wamp64\www\TruewirelessLifeline\public\files\consentPDF\index.php(40): connections()
+#2 {main}

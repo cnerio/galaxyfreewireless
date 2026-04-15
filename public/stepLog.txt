@@ -1,0 +1,20 @@
+start first step
+Captacha succees
+Update LEad
+Update New DataChecking Prcoess
+Checking Prcoess
+Checking Prcoess
+Checking Prcoess
+Checking Prcoess
+Checking Prcoess
+Update New DataC:/wamp64/www/public/uploads/TWTA5A3612/ID_TWTA5A3612_20260401035535_81461f.jpg
+C:/wamp64/www/public/uploads/TWTA5A3612/POB_TWTA5A3612_20260401035535_0fc598.jpg
+submitLanding documents saved for customer TWTA5T3613
+submitLanding documents saved for customer TWTA5A3614
+submitLanding documents saved for customer TWTA8T3615
+submitLanding documents saved for customer TWTA8T3616
+submitLanding documents saved for customer TWTA8T3617
+submitLanding documents saved for customer TWTA8T3618
+submitAmbtOrder document upload attempts for customer TWTA8T3618: {"ID":{"status":"success","msg":"ID FILE  UPLOADED"},"POB":{"status":"success","msg":"POB FILE  UPLOADED"}}
+submitLanding documents saved for customer TWTA8T3619: POB
+submitAmbtOrder document upload attempts for customer TWTA8T3619: {"POB":{"status":"success","msg":"POB FILE  UPLOADED"}}

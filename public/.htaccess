@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  DirectoryIndex index.php
+
+  # Serve existing files/dirs as-is (css/js/img/pdf/php)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Feed Core.php (Traversy-style): /controller/method -> ?url=controller/method
+  RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+  RewriteRule ^$ index.php [L]
+</IfModule>
+
