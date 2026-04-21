@@ -45,12 +45,12 @@ class Page {
     }
 
     /**
-     * Persists a lead row into freewireless_records.
+     * Persists a lead row into lifeline_records.
      * Returns the new auto-increment ID.
      */
     public function saveLead($data)
     {
-        $this->db->insertQuery('freewireless_records', $data);
+        $this->db->insertQuery('lifeline_records', $data);
         return (int)$this->db->lastinsertedId();
     }
 }
