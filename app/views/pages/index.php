@@ -307,7 +307,7 @@ alt="Receiving a free smartphone"
 class="h-48 w-full rounded-xl object-cover shadow-sm"
 />
 <h3 class="mt-4 text-lg font-bold text-brand-navy">Get Connected</h3>
-<p class="mt-2 text-sm leading-6 text-slate-500">Once approved we ship your free SIM card or device so you can enjoy your free wireless service.</p>
+<p class="mt-2 text-sm leading-6 text-slate-500">Once approved you can enjoy your free wireless service right away.</p>
 </div>
 </div>
 </div>
@@ -351,8 +351,8 @@ class="h-48 w-full rounded-xl object-cover shadow-sm"
 <path stroke-linecap="round" stroke-linejoin="round" d="M11 18h2" />
 </svg>
 </div>
-<h3 class="text-lg font-bold text-brand-navy">Free SIM Card &amp; Device</h3>
-<p class="mt-2 text-sm leading-6 text-slate-500">Approved applicants receive a no-cost SIM card — and select plans include a free smartphone shipped directly to your door.</p>
+<h3 class="text-lg font-bold text-brand-navy">Free Wireless Service</h3>
+<p class="mt-2 text-sm leading-6 text-slate-500">Approved applicants receive free wireless service — stay connected with unlimited talk, text, and data at no cost.</p>
 </article>
 
 <article class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
@@ -472,7 +472,7 @@ class="h-44 w-full rounded-2xl object-cover shadow-sm"
 <!-- FINAL CTA BANNER -->
 <section class="bg-brand-light py-16 sm:py-20">
 <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-<h2 class="text-3xl font-black text-brand-navy sm:text-4xl">Ready to Get Your Free Phone Service?</h2>
+<h2 class="text-3xl font-black text-brand-navy sm:text-4xl">Ready to Get Your Free Wireless Service?</h2>
 <p class="mx-auto mt-4 max-w-xl text-slate-500">
 Thousands of qualifying households are already connected. Check availability in your area and start your free enrollment today.
 </p>
