@@ -589,8 +589,8 @@ unhighlight: function (element) {
 $(element).removeClass("error");
 },
 errorPlacement: function (error, element) {
-/* Place error after the icon wrapper div */
-error.insertAfter(element.closest(".zip-wrap, .email-wrap") || element);
+/* Place error below the input, inside its field column */
+error.insertAfter(element.closest(".relative") || element);
 },
 submitHandler: function (form) {
 var $form   = $(form);
