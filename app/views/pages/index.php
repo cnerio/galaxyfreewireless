@@ -57,10 +57,10 @@ Skip to main content
 <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
 <a href="#" class="flex items-center gap-2" aria-label="Galaxy Free Wireless Home">
-<!-- <img src="<?php echo URLROOT; ?>/public/img/AALogo.png" alt="Galaxy Free Wireless" class="h-10 w-auto sm:h-11" /> -->
- <h2 class="text-center text-xl font-black text-brand-navy sm:text-xl">
+<img src="<?php echo URLROOT; ?>/public/img/galaxylogo.png" alt="Galaxy Free Wireless" class="h-10 w-auto sm:h-11" />
+ <!-- <h2 class="text-center text-xl font-black text-brand-navy sm:text-xl">
 		Galaxy Free Wireless
-	</h2>
+	</h2> -->
 </a>
 
 <nav class="hidden md:flex md:items-center md:gap-8" aria-label="Primary navigation">

@@ -9,7 +9,8 @@
 	<footer id="contact" class="bg-brand-navy text-slate-100">
 		<div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
 			<div>
-				<h3 class="text-lg font-bold text-white">Galaxy Free Wireless</h3>
+				<img src="<?php echo URLROOT; ?>/public/img/Logo_White.png" alt="Galaxy Free Wireless" class="h-20 w-auto sm:h-15" />
+				<!-- <h3 class="text-lg font-bold text-white">Galaxy Free Wireless</h3> -->
 				<!-- <p class="mt-3 text-sm leading-6 text-slate-300">Reliable telecommunications access for qualified households through federally supported social&nbsp;programs.</p> -->
 			</div>
 
