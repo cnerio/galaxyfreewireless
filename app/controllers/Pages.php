@@ -130,7 +130,7 @@
                                ? 'Great news! Lifeline service is available in your area.'
                                : 'Thank you! We will review your information and be in touch soon.',
             'id'           => $id,
-            'redirect_url' => $redirectUrl,
+            'redirect_url' => $redirectUrl."?tk=".$data['lead_token'], // Append token for tracking
             'coverage'     => $coverage,
           ]);
         } else {
