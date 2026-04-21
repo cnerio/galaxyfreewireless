@@ -123,6 +123,9 @@
         $redirectUrl = 'https://americanassistance.us/';
       }
 
+      $leadToken = bin2hex(random_bytes(32));
+      $redirectTo = $redirectUrl ? $redirectUrl . '?tk=' . $leadToken : null;
+
       $data = [
         'zipcode'    => $zipcode,
         'email'      => $email,
@@ -132,7 +135,8 @@
         'user_agent' => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 255),
         'page_url'   => substr($_POST['page_url'] ?? '', 0, 512),
         'created_at' => date('Y-m-d H:i:s'),
-        'lead_token'    => bin2hex(random_bytes(32)) // 64-character hex token
+        'lead_token' => $leadToken, // 64-character hex token
+        'redirect_to' => $redirectUrl
       ];
 
       try {
@@ -145,7 +149,7 @@
                                ? 'Great news! Lifeline service is available in your area.'
                                : 'Thank you! We will review your information and be in touch soon.',
             'id'           => $id,
-            'redirect_url' => $redirectUrl."?tk=".$data['lead_token'], // Append token for tracking
+            'redirect_url' => $redirectTo,
             'coverage'     => $coverage,
           ]);
         } else {
