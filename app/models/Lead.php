@@ -19,31 +19,10 @@ class Lead {
     {
         $this->db->query(
             "SELECT
-                customer_id,
-                first_name,
-                second_name,
-                dob,
                 email,
-                phone_number,
-                address1,
-                address2,
                 city,
                 state,
-                zipcode,
-                shipping_address1,
-                shipping_address2,
-                shipping_city,
-                shipping_state,
-                shipping_zipcode,
-                program_benefit,
-                phone_type,
-                order_step,
-                URL,
-                utms,
-                company,
-                ETC,
-                datetimeConsent,
-                created_at
+                zipcode
              FROM lifeline_records
              WHERE lead_token = :token
              LIMIT 1"
