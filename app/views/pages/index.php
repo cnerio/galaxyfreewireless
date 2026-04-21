@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><?php echo SITENAME; ?></title>
-<meta name="description" content="Get a free government phone and service through the Lifeline Assistance Program. Check if you qualify today — unlimited talk, text, and data at no cost." />
+<meta name="description" content="Get a free government wireless service through the Lifeline Assistance Program. Check if you qualify today — unlimited talk, text, and data at no cost." />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>

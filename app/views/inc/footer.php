@@ -16,10 +16,10 @@
 			<div>
 				<h4 class="text-sm font-semibold uppercase tracking-wide text-white">Site Links</h4>
 				<ul class="mt-3 space-y-2 text-sm text-slate-300">
-					<li><a href="#" class="hover:text-white">Home</a></li>
+					<li><a href="<?php echo URLROOT; ?>" class="hover:text-white">Home</a></li>
 					<!-- <li><a href="#about" class="hover:text-white">About Us</a></li>
 					<li><a href="#plans" class="hover:text-white">Plans</a></li> -->
-					<li><a href="#eligibility" class="hover:text-white">Apply Now</a></li>
+					<li><a href="<?php echo URLROOT; ?>#eligibility" class="hover:text-white">Apply Now</a></li>
 				</ul>
 			</div>
 
