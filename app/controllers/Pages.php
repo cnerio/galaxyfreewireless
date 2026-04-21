@@ -117,6 +117,7 @@
         'user_agent' => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 255),
         'page_url'   => substr($_POST['page_url'] ?? '', 0, 512),
         'created_at' => date('Y-m-d H:i:s'),
+        'lead_token'    => bin2hex(random_bytes(32)) // 64-character hex token
       ];
 
       try {

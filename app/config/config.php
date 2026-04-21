@@ -9,7 +9,7 @@
 
     if ($documentRoot !== '') {
         // 1) First attempt from document root.
-        $configCandidates[] = $documentRoot . DIRECTORY_SEPARATOR . 'config_fw.ini';
+        $configCandidates[] = $documentRoot . DIRECTORY_SEPARATOR . 'config.ini';
 
         // 2) Try .secrets one level above the document root (typical hosted setup).
         $configCandidates[] = dirname($documentRoot) . DIRECTORY_SEPARATOR . '.secrets' . DIRECTORY_SEPARATOR . 'config.ini';
@@ -75,6 +75,6 @@
   // URL Root
   define('URLROOT', $GLOBALS["urlroot"]);
   // Site Name
-  define('SITENAME', 'Galaxy Free Wireless | Lifeline Assistance Program');
+  define('SITENAME', $config["sitename"]);
   // App Version
   define('APPVERSION', '1.0.0');

@@ -126,10 +126,10 @@ class="h-[50vh] min-h-[560px] w-full object-cover object-center"
 Federal Lifeline Program
 </span> -->
 <h1 class="mt-4 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-Free Phone &amp; Service<br />for Those Who&nbsp;Qualify
+FREE WIRELESS SERVICE<br />for Those Who&nbsp;Qualify
 </h1>
 <p class="mt-5 max-w-xl text-base leading-7 text-slate-200 sm:text-lg">
-The Lifeline Assistance Program provides eligible households with free unlimited talk, text, and high-speed data every month — at absolutely no cost to you.
+Get FREE Wireless Service through the Lifeline Benefit Program. With eligibility you receive free talk, text and high-speed data every month – at no cost to you!
 </p>
 <!-- <div class="mt-8 flex flex-wrap gap-4">
 <a href="#check-availability"
@@ -185,7 +185,7 @@ Learn More
 	</div> -->
 
 	<h2 class="text-center text-2xl font-black text-brand-navy sm:text-3xl">
-		Check if Lifeline Service is Available in Your Area
+		Get Your Benefit Now!
 	</h2>
 	<p class="mt-2 text-center text-sm text-slate-500">
 		Enter your ZIP code and email address to instantly see if the Lifeline program is available where you live.
@@ -247,7 +247,7 @@ Learn More
 					type="submit"
 					class="w-full whitespace-nowrap rounded-lg bg-brand-red px-7 py-3.5 text-base font-bold text-white shadow-md transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 sm:w-auto"
 				>
-					Check Availability &rarr;
+					Get Started! &rarr;
 				</button>
 			</div>
 
@@ -275,7 +275,7 @@ Learn More
 <div class="mx-auto max-w-2xl text-center">
 <p class="text-sm font-semibold uppercase tracking-widest text-brand-red">Simple &amp; Fast</p>
 <h2 class="mt-2 text-3xl font-black text-brand-navy sm:text-4xl">How It Works</h2>
-<p class="mt-3 text-slate-500">Getting your free phone service takes just three easy steps.</p>
+<p class="mt-3 text-slate-500">Getting your free wireless service takes just three easy steps.</p>
 </div>
 
 <div class="mt-12 grid gap-8 sm:grid-cols-3">
@@ -287,7 +287,7 @@ alt="Person checking eligibility online"
 class="h-48 w-full rounded-xl object-cover shadow-sm"
 />
 <h3 class="mt-4 text-lg font-bold text-brand-navy">Check Your Eligibility</h3>
-<p class="mt-2 text-sm leading-6 text-slate-500">Enter your ZIP code and email above to see if the Lifeline program covers your area and if you qualify.</p>
+<p class="mt-2 text-sm leading-6 text-slate-500">Enter your zip code and email to confirm service area</p>
 </div>
 <div class="text-center">
 <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-navy text-2xl font-black text-white shadow-lg">2</div>
@@ -307,7 +307,7 @@ alt="Receiving a free smartphone"
 class="h-48 w-full rounded-xl object-cover shadow-sm"
 />
 <h3 class="mt-4 text-lg font-bold text-brand-navy">Get Connected</h3>
-<p class="mt-2 text-sm leading-6 text-slate-500">Once approved, receive your free SIM card or device and enjoy unlimited service starting on day one.</p>
+<p class="mt-2 text-sm leading-6 text-slate-500">Once approved we ship your free SIM card or device so you can enjoy your free wireless service.</p>
 </div>
 </div>
 </div>

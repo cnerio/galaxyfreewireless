@@ -220,6 +220,8 @@ class Enrolls extends Controller
     parse_str(parse_url($currentUrl, PHP_URL_QUERY) ?? '', $params);
     $utms = json_encode($params);
 
+    $leadToken = bin2hex(random_bytes(32));
+
     $data = [
       'first_name' => ucfirst(strtolower($firstName)),
       'second_name' => ucfirst(strtolower($lastName)),
@@ -245,7 +247,8 @@ class Enrolls extends Controller
       'URL' => $currentUrl,
       'utms' => $utms,
       'company' => 'American Assist',
-      'ETC' => 'AMBT'
+      'ETC' => 'AMBT',
+      'lead_token' => $leadToken
     ];
 
     try {
@@ -295,6 +298,7 @@ class Enrolls extends Controller
           'success' => true,
           'message' => 'Enrollment request submitted successfully.',
           'customer_id' => $customerId,
+          'lead_token' => $leadToken,
           'redirect_url' => URLROOT . '/pages/thankyou'
         ]);
         return;

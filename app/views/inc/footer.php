@@ -10,15 +10,15 @@
 		<div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
 			<div>
 				<h3 class="text-lg font-bold text-white">Galaxy Free Wireless</h3>
-				<p class="mt-3 text-sm leading-6 text-slate-300">Reliable telecommunications access for qualified households through federally supported social&nbsp;programs.</p>
+				<!-- <p class="mt-3 text-sm leading-6 text-slate-300">Reliable telecommunications access for qualified households through federally supported social&nbsp;programs.</p> -->
 			</div>
 
 			<div>
 				<h4 class="text-sm font-semibold uppercase tracking-wide text-white">Site Links</h4>
 				<ul class="mt-3 space-y-2 text-sm text-slate-300">
 					<li><a href="#" class="hover:text-white">Home</a></li>
-					<li><a href="#about" class="hover:text-white">About Us</a></li>
-					<li><a href="#plans" class="hover:text-white">Plans</a></li>
+					<!-- <li><a href="#about" class="hover:text-white">About Us</a></li>
+					<li><a href="#plans" class="hover:text-white">Plans</a></li> -->
 					<li><a href="#eligibility" class="hover:text-white">Apply Now</a></li>
 				</ul>
 			</div>
@@ -27,7 +27,7 @@
 				<h4 class="text-sm font-semibold uppercase tracking-wide text-white">Contact</h4>
 				<ul class="mt-3 space-y-2 text-sm text-slate-300">
 					<li>Phone: <a href="tel:+18333345566">+1 (833) 334-5566</a></li>
-					<li>Email: <a href="mailto:support@americanassistance.us">support@americanassistance.us</a></li>
+					<li>Email: <a href="mailto:support@galaxyfreewireless.com">support@galaxyfreewireless.com</a></li>
 					<!-- <li>Hours: Mon-Fri, 9:00 AM-6:00 PM</li> -->
 				</ul>
 			</div>
