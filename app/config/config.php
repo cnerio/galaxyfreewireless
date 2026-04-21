@@ -9,7 +9,7 @@
 
     if ($documentRoot !== '') {
         // 1) First attempt from document root.
-        $configCandidates[] = $documentRoot . DIRECTORY_SEPARATOR . 'config.ini';
+        $configCandidates[] = $documentRoot . DIRECTORY_SEPARATOR . 'config_fw.ini';
 
         // 2) Try .secrets one level above the document root (typical hosted setup).
         $configCandidates[] = dirname($documentRoot) . DIRECTORY_SEPARATOR . '.secrets' . DIRECTORY_SEPARATOR . 'config.ini';
