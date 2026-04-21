@@ -9,7 +9,8 @@
       //   redirect('posts');
       // }
       $data = [
-        'agent' => isset($agent) ? strtolower(trim($agent)) : ''
+        'agent' => isset($agent) ? strtolower(trim($agent)) : '',
+        'csrf_token' => csrf_token('save_lead_form')
       ];
      
       $this->view('pages/index', $data);
@@ -70,6 +71,20 @@
       if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         http_response_code(405);
         echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
+        exit;
+      }
+
+      $honeypot = trim($_POST['website'] ?? '');
+      if ($honeypot !== '') {
+        http_response_code(422);
+        echo json_encode(['success' => false, 'message' => 'Unable to process request.']);
+        exit;
+      }
+
+      $csrfToken = $_POST['csrf_token'] ?? '';
+      if (!verify_csrf_token($csrfToken, 'save_lead_form')) {
+        http_response_code(422);
+        echo json_encode(['success' => false, 'message' => 'Session expired. Please refresh the page and try again.']);
         exit;
       }
 

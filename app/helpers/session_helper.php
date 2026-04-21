@@ -1,5 +1,42 @@
 <?php
     session_start();
+
+    function csrf_token($form = 'default'){
+        if(!isset($_SESSION['_csrf']) || !is_array($_SESSION['_csrf'])){
+            $_SESSION['_csrf'] = [];
+        }
+
+        if(
+            empty($_SESSION['_csrf'][$form]['token']) ||
+            !is_string($_SESSION['_csrf'][$form]['token']) ||
+            strlen($_SESSION['_csrf'][$form]['token']) !== 64
+        ){
+            $_SESSION['_csrf'][$form] = [
+                'token' => bin2hex(random_bytes(32)),
+                'created_at' => time()
+            ];
+        }
+
+        return $_SESSION['_csrf'][$form]['token'];
+    }
+
+    function verify_csrf_token($token, $form = 'default', $ttlSeconds = 7200){
+        if(
+            empty($token) ||
+            !isset($_SESSION['_csrf'][$form]['token']) ||
+            !is_string($_SESSION['_csrf'][$form]['token'])
+        ){
+            return false;
+        }
+
+        $createdAt = (int)($_SESSION['_csrf'][$form]['created_at'] ?? 0);
+        if($createdAt <= 0 || (time() - $createdAt) > $ttlSeconds){
+            return false;
+        }
+
+        return hash_equals($_SESSION['_csrf'][$form]['token'], (string)$token);
+    }
+
     //flash message helper
     function flash($name = '', $message = '', $class = 'alert alert-success'){
         if(!empty($name)){
