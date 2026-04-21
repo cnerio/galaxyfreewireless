@@ -615,18 +615,25 @@ page_url: window.location.href
 },
 dataType: "json",
 success: function (res) {
+var hasCoverage = typeof res.has_coverage !== "undefined"
+? !!res.has_coverage
+: !!(res.coverage && (Number(res.coverage.GTW) === 1 || Number(res.coverage.AMBT) === 1));
+
+var isSuccessState = !!res.success && hasCoverage;
+
 $status
 .removeClass("hidden")
-.addClass("bg-green-50 border-green-200 text-green-700")
+.addClass(isSuccessState ? "bg-green-50 border-green-200 text-green-700" : "bg-red-50 border-red-200 text-red-700")
 .text(res.message || "Thank you! We will be in touch soon.");
-$btn.text("Redirecting…").prop("disabled", true);
+
+$btn.text(hasCoverage ? "Redirecting..." : "No Coverage").prop("disabled", hasCoverage);
 $form[0].reset();
 if (res.redirect_url) {
 setTimeout(function () {
 window.location.assign(res.redirect_url);
 }, 1500);
 } else {
-$btn.text("Submitted ✓");
+$btn.text(hasCoverage ? "Submitted" : "Try Another ZIP");
 }
 },
 error: function (xhr) {

@@ -122,6 +122,7 @@
       } elseif ($coverage['AMBT'] === 1) {
         $redirectUrl = 'https://americanassistance.us/';
       }
+      $hasCoverage = ($coverage['GTW'] === 1 || $coverage['AMBT'] === 1);
 
       $leadToken = bin2hex(random_bytes(32));
       $redirectTo = $redirectUrl ? $redirectUrl . '?tk=' . $leadToken : null;
@@ -145,11 +146,12 @@
         if ($id > 0) {
           echo json_encode([
             'success'      => true,
-            'message'      => $redirectUrl
+            'message'      => $hasCoverage
                                ? 'Great news! Lifeline service is available in your area.'
-                               : 'Thank you! We will review your information and be in touch soon.',
+                               : 'Sorry, Lifeline service is currently not available in your area.',
             'id'           => $id,
             'redirect_url' => $redirectTo,
+            'has_coverage' => $hasCoverage,
             'coverage'     => $coverage,
           ]);
         } else {
