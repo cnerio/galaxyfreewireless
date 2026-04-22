@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Extract DOCX text",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"Add-Type -AssemblyName System.IO.Compression.FileSystem; $doc='c:\\Users\\Cheesecake\\Downloads\\Check.GalaxyDistribution T&C 4.21.2026.docx'; $zip=[System.IO.Compression.ZipFile]::OpenRead($doc); $entry=$zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }; $sr=New-Object System.IO.StreamReader($entry.Open()); $xml=$sr.ReadToEnd(); $sr.Close(); $zip.Dispose(); $xml -replace '<[^>]+>',' ' -replace '&amp;','&' -replace '\\s+',' ' | Out-File -FilePath 'c:\\wamp64\\www\\galaxyfreewireless\\docx_terms_raw.txt' -Encoding utf8; Write-Output 'done'"
+			]
+		}
+	]
+}
