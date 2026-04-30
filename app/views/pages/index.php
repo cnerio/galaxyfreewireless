@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Snap Pixel Code -->
+<script type='text/javascript'>
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+r.src=n;var u=t.getElementsByTagName(s)[0];
+u.parentNode.insertBefore(r,u);})(window,document,
+'https://sc-static.net/scevent.min.js');
+
+snaptr('init', 'e9807c81-aecf-4ae4-8c7d-e180b7b3558e', {});
+
+snaptr('track', 'PAGE_VIEW');
+
+</script>
+<!-- End Snap Pixel Code -->
+
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><?php echo SITENAME; ?></title>
 <meta name="description" content="Get a free government wireless service through the Lifeline Assistance Program. Check if you qualify today — unlimited talk, text, and data at no cost." />
+<meta name="google-site-verification" content="jgBPXRk-hlMPmAEEt_hcjYjExd1uEzHkva0_cLu9EzY" />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -44,6 +63,16 @@ border-color: #ef4444 !important;
 box-shadow: 0 0 0 3px rgba(239,68,68,.15) !important;
 }
 </style>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LPCJVQ4');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 <body class="bg-white text-slate-800 antialiased">
 
@@ -107,6 +136,12 @@ Check Availability
 </nav>
 </div>
 </header>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LPCJVQ4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
 <!-- MAIN CONTENT -->
 <main id="main-content">
@@ -257,7 +292,7 @@ Learn More
 		<input type="hidden" id="state" name="state" value="" />
 		<input type="hidden" id="city"  name="city"  value="" />
 		<input type="hidden" id="csrf_token" name="csrf_token" value="<?php echo $data['csrf_token'] ?? ''; ?>" />
-		<input type="text" id="url_confirm" name="url_confirm" value="" tabindex="-1" autocomplete="new-password" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" class="absolute left-[-9999px] top-auto h-px w-px overflow-hidden" />
+		<input type="text" id="website" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute left-[-9999px] top-auto h-px w-px overflow-hidden" />
 
 		<!-- ZIP lookup feedback -->
 		<p id="zip-location" class="hidden mt-3 text-center text-sm text-brand-navy font-medium"></p>
@@ -610,7 +645,7 @@ email:    $("#email").val(),
 state:    $("#state").val(),
 city:     $("#city").val(),
 csrf_token: $("#csrf_token").val(),
-website: $("#url_confirm").val(),
+website: $("#website").val(),
 page_url: window.location.href
 },
 dataType: "json",
