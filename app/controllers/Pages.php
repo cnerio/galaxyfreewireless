@@ -74,7 +74,7 @@
         exit;
       }
 
-      $honeypot = trim($_POST['website'] ?? '');
+      $honeypot = trim($_POST['website'] ?? '') . trim($_POST['url_confirm'] ?? '');
       if ($honeypot !== '') {
         http_response_code(422);
         echo json_encode(['success' => false, 'message' => 'Unable to process request.']);

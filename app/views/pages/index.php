@@ -257,7 +257,7 @@ Learn More
 		<input type="hidden" id="state" name="state" value="" />
 		<input type="hidden" id="city"  name="city"  value="" />
 		<input type="hidden" id="csrf_token" name="csrf_token" value="<?php echo $data['csrf_token'] ?? ''; ?>" />
-		<input type="text" id="website" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute left-[-9999px] top-auto h-px w-px overflow-hidden" />
+		<input type="text" id="url_confirm" name="url_confirm" value="" tabindex="-1" autocomplete="new-password" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" class="absolute left-[-9999px] top-auto h-px w-px overflow-hidden" />
 
 		<!-- ZIP lookup feedback -->
 		<p id="zip-location" class="hidden mt-3 text-center text-sm text-brand-navy font-medium"></p>
@@ -610,7 +610,7 @@ email:    $("#email").val(),
 state:    $("#state").val(),
 city:     $("#city").val(),
 csrf_token: $("#csrf_token").val(),
-website: $("#website").val(),
+website: $("#url_confirm").val(),
 page_url: window.location.href
 },
 dataType: "json",

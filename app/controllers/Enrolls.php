@@ -221,7 +221,7 @@ class Enrolls extends Controller
     $utms = json_encode($params);
 
     $leadToken = bin2hex(random_bytes(32));
-
+    $NYdate = new DateTime("now", new DateTimeZone("America/New_York"));
     $data = [
       'first_name' => ucfirst(strtolower($firstName)),
       'second_name' => ucfirst(strtolower($lastName)),
@@ -248,7 +248,8 @@ class Enrolls extends Controller
       'utms' => $utms,
       'company' => 'American Assist',
       'ETC' => 'AMBT',
-      'lead_token' => $leadToken
+      'lead_token' => $leadToken,
+      'created_at_ny' => $NYdate->format('Y-m-d H:i:s')
     ];
 
     try {
