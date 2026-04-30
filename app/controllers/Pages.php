@@ -126,7 +126,7 @@
 
       $leadToken = bin2hex(random_bytes(32));
       $redirectTo = $redirectUrl ? $redirectUrl . '?tk=' . $leadToken : null;
-
+      $NYdate = new DateTime("now", new DateTimeZone("America/New_York"));
       $data = [
         'zipcode'    => $zipcode,
         'email'      => $email,
@@ -137,7 +137,8 @@
         'page_url'   => substr($_POST['page_url'] ?? '', 0, 512),
         'created_at' => date('Y-m-d H:i:s'),
         'lead_token' => $leadToken, // 64-character hex token
-        'redirect_to' => $redirectUrl
+        'redirect_to' => $redirectUrl,
+        'created_at_ny' => $NYdate->format('Y-m-d H:i:s')
       ];
 
       try {
