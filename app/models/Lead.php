@@ -22,7 +22,8 @@ class Lead {
                 email,
                 city,
                 state,
-                zipcode
+                zipcode,
+                page_url
              FROM lifeline_records
              WHERE lead_token = :token
              LIMIT 1"
