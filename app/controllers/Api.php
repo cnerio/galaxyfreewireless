@@ -47,6 +47,10 @@ class Api extends Controller {
             return;
         }
 
+        if (!empty($lead['page_url'])) {
+            $lead['page_url'] = urlencode($lead['page_url']);
+        }
+
         echo json_encode([
             'success' => true,
             'data'    => $lead
