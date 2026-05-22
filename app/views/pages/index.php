@@ -597,6 +597,13 @@ $("#zipcode").on("blur", function () {
 	});
 });
 
+$("#zipcode").on("keydown", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        $(this).trigger("blur");
+    }
+});
+
 /* Availability form validation */
 $("#availability-form").validate({
 errorElement: "label",
