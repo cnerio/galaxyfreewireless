@@ -32,41 +32,42 @@ class Enrolls extends Controller
 
   public function index($customer_id = null)
   {
-     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-          $full_url = $_POST['url'];
-            parse_str(parse_url($full_url, PHP_URL_QUERY), $params);
-            $utms = json_encode($params);
-          $data = [
-            "first_name" => trim(ucfirst(strtolower($_POST['firstname']))),
-            "second_name" => trim(ucfirst(strtolower($_POST['lastname']))),
-            // "address1" => trim($_POST['address1']),
-            // "address2" => trim($_POST['addess2']),
-            // "city" => trim(ucfirst(strtolower($_POST['city']))),
-            "email" => trim(strtolower($_POST['email'])),
-            "state" => strtoupper(trim($_POST['state'] ?? '')),
-            "zipcode" => $_POST['zipcode'],
-            "url" => $full_url,
-            "utms"=>$utms,
-            "powered"=>$_POST['powered'],
-            "enrollment_id"=>$_POST['enrollment_id'],
-            "is_tribal"=>$_POST['is_tribal'],
-            "customer_id"=>(isset($_POST['customer_id']))?$_POST['customer_id']:null,
-            "step"=>0
-          ];
+     redirect('index');
+    //  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //       $full_url = $_POST['url'];
+    //         parse_str(parse_url($full_url, PHP_URL_QUERY), $params);
+    //         $utms = json_encode($params);
+    //       $data = [
+    //         "first_name" => trim(ucfirst(strtolower($_POST['firstname']))),
+    //         "second_name" => trim(ucfirst(strtolower($_POST['lastname']))),
+    //         // "address1" => trim($_POST['address1']),
+    //         // "address2" => trim($_POST['addess2']),
+    //         // "city" => trim(ucfirst(strtolower($_POST['city']))),
+    //         "email" => trim(strtolower($_POST['email'])),
+    //         "state" => strtoupper(trim($_POST['state'] ?? '')),
+    //         "zipcode" => $_POST['zipcode'],
+    //         "url" => $full_url,
+    //         "utms"=>$utms,
+    //         "powered"=>$_POST['powered'],
+    //         "enrollment_id"=>$_POST['enrollment_id'],
+    //         "is_tribal"=>$_POST['is_tribal'],
+    //         "customer_id"=>(isset($_POST['customer_id']))?$_POST['customer_id']:null,
+    //         "step"=>0
+    //       ];
 
-          $this->view('enrolls/index', $data);
-        }else{
-          if($customer_id){
-            $data=$this->enrollModel->getCustomerData($customer_id);
-            //echo $data[0]['order_step'];
-            $data[0]['step']=$this->getStep($data[0]['order_step']);
-            $this->view('enrolls/index', $data[0]);
-          }else{
-            //$this->view('enrolls/index');
-            redirect('index');
-          }
+    //       $this->view('enrolls/index', $data);
+    //     }else{
+    //       if($customer_id){
+    //         $data=$this->enrollModel->getCustomerData($customer_id);
+    //         //echo $data[0]['order_step'];
+    //         $data[0]['step']=$this->getStep($data[0]['order_step']);
+    //         $this->view('enrolls/index', $data[0]);
+    //       }else{
+    //         //$this->view('enrolls/index');
+    //         redirect('index');
+    //       }
           
-        }
+    //     }
   }
 
   public function submitLanding()

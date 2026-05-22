@@ -69,6 +69,17 @@
       header('Content-Type: application/json; charset=utf-8');
 
       if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        $logLine = sprintf(
+          "[%s] saveLead 405 | method=%s | uri=%s | ref=%s | ip=%s | ua=%s\n",
+          date('Y-m-d H:i:s'),
+          $_SERVER['REQUEST_METHOD'] ?? '',
+          $_SERVER['REQUEST_URI'] ?? '',
+          $_SERVER['HTTP_REFERER'] ?? '',
+          $_SERVER['REMOTE_ADDR'] ?? '',
+          $_SERVER['HTTP_USER_AGENT'] ?? ''
+        );
+        @error_log($logLine, 3, APPROOT . '/../public/stepLog.txt');
+
         http_response_code(405);
         echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
         exit;
