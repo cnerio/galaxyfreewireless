@@ -56,5 +56,5 @@ function write_app_log($message) {
     file_put_contents($logFile, $formattedMessage, FILE_APPEND | LOCK_EX);
 
     // Also write to the public stepLog.txt file in the current way
-    @error_log($formattedMessage, 3, APPROOT . '/../public/stepLog.txt');
+    //@error_log($formattedMessage, 3, APPROOT . '/../public/stepLog.txt');
 }

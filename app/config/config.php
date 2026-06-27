@@ -77,4 +77,4 @@
   // Site Name
   define('SITENAME', $config["sitename"]);
   // App Version
-  define('APPVERSION', '1.0.0');
+  define('APPVERSION', '2.1.0');
