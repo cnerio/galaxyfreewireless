@@ -36,6 +36,10 @@
         $this->view('pages/privacy', $data);
     }
 
+    public function main($agent = NULL){
+      $this->index($agent);   // reuse the homepage logic
+    }
+
     public function terms()
     {
         $data = ['title' => 'Terms of Service'];
