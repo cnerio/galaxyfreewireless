@@ -1,7 +1,7 @@
 <?php 
 use setasign\Fpdi\Fpdi; 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
 require('fpdf.php'); 
 require_once('src/autoload.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/surgephone/customerPortal/app/config/config.php');
