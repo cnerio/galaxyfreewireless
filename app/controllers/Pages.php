@@ -78,7 +78,7 @@
           $_SERVER['REMOTE_ADDR'] ?? '',
           $_SERVER['HTTP_USER_AGENT'] ?? ''
         );
-        @error_log($logLine, 3, APPROOT . '/../public/stepLog.txt');
+        write_app_log($logLine);
 
         http_response_code(405);
         echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
