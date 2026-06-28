@@ -13,11 +13,17 @@
 
       $url = $this->getUrl();
       // Look in controllers for first value
-      if(isset($url[0]) && file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
-        // If exists, set as controller
-        $this->currentController = ucwords($url[0]);
-        // Unset 0 Index
-        unset($url[0]);
+      if(isset($url[0]) && $url[0] !== ''){
+        if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+          // If exists, set as controller
+          $this->currentController = ucwords($url[0]);
+          // Unset 0 Index
+          unset($url[0]);
+        } else {
+          // Controller does not exist -> 404
+          $this->trigger404();
+          return;
+        }
       }
 
       // Require the controller
@@ -28,11 +34,21 @@
 
       // Check for second part of url
       if(isset($url[1])){
-        // Check to see if method exists in controller
-        if(method_exists($this->currentController, $url[1])){
+        // Check to see if method exists in controller and is callable
+        if(method_exists($this->currentController, $url[1]) && is_callable([$this->currentController, $url[1]]) && substr($url[1], 0, 2) !== '__'){
           $this->currentMethod = $url[1];
           // Unset 1 index
           unset($url[1]);
+        } else {
+          // Method specified but does not exist -> 404
+          $this->trigger404();
+          return;
+        }
+      } else {
+        // If method is not specified, check if default index exists and is callable
+        if(!method_exists($this->currentController, $this->currentMethod) || !is_callable([$this->currentController, $this->currentMethod])){
+          $this->trigger404();
+          return;
         }
       }
 
@@ -41,6 +57,21 @@
 
       // Call a callback with array of params
       call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
+    }
+
+    private function trigger404(){
+      http_response_code(404);
+      $pagesControllerFile = '../app/controllers/Pages.php';
+      if(file_exists($pagesControllerFile)){
+        require_once $pagesControllerFile;
+        $controller = new Pages();
+        if(method_exists($controller, 'notFound')){
+          $controller->notFound();
+          return;
+        }
+      }
+      echo '<h1>404 Page Not Found</h1>';
+      echo '<p>The requested page does not exist.</p>';
     }
 
     public function getUrl(){

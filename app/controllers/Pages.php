@@ -181,4 +181,13 @@
 
       exit;
     }
+
+    public function notFound() {
+      http_response_code(404);
+      $data = [
+        'title' => 'Page Not Found',
+        'description' => 'The page you are looking for does not exist.'
+      ];
+      $this->view('pages/404', $data);
+    }
   }

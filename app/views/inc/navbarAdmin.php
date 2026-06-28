@@ -5,7 +5,7 @@
             <span>Go Knows Lifeline</span></a> -->
             <a class="navbar-brand">
         <figure class="figure mb-0">
-            <img class="img-fluid" style="width:auto;height:60px;" src="<?php echo URLROOT; ?>/public/img/logo.png" alt="">
+            <img class="img-fluid" style="width:auto;height:60px;" src="<?php echo URLROOT; ?>/public/img/galaxylogo.png" alt="">
             <figcaption>
                 </figcaption>
         </figure>

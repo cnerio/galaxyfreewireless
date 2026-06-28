@@ -66,14 +66,14 @@
 			if($data['email'] != "" && filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
 				$customerName = $data['firstname'] . ' ' . $data['lastname'];
 				$applicationId = $data['customer_id'];
-				$uploadLink = "https://lifeline.truewireless.com/enrolls/getdocuments/" . $data['customer_id'];
-				$supportEmail = "support@truewireless.com";
+				$uploadLink = URLROOT . "/enrolls/getdocuments/" . $data['customer_id'];
+				$supportEmail = "check@galaxydistribution.com";
 				//print_r($data);
-			 	//$to = "xneriox@gmail.com";
+				//$to = "xneriox@gmail.com";
 				$subject = "Additional Documents Required to Complete Your Lifeline Application ";  
 				//$message = "Customer ID: " . $data['customer_id'] . "\n";
 				//$message .= "Customer Name: " . $data['first_name']." ".$data['second_name'] . "\n";
-				$message = "<div style='font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#333;'><p>Hello <strong>{$customerName}</strong>,</p><p>Thank you for submitting your Lifeline application.We have successfully received your information.</p><p>To continue processing your application we still need the following documents:</p><ul>	<li>Proof of Identity (ID card, driver's license, passport)</li>	<li>Proof of Benefit (eligibility letter or benefit notice)</li></ul><p>Please upload the required documents using the secure link below: </p><p><a href='{$uploadLink}' style='display:inline-block;padding:12px 20px;background:#0d6efd;color:#ffffff;text-decoration:none;border-radius:4px;'>Upload Documents</a></p><p><strong>Important:</strong><br> Your application cannot be completed until all required documentation has been received.</p><p>If you have already submitted these documents, please disregard this message.</p><p>If you need assistance, contact us at <a href='mailto:{$supportEmail}'>{$supportEmail}</a>.</p><br><p>Kind regards,<br><strong>Lifeline Enrollment Team</strong><br>True Wireless<p></div>";
+				$message = "<div style='font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#333;'><p>Hello <strong>{$customerName}</strong>,</p><p>Thank you for submitting your Lifeline application.We have successfully received your information.</p><p>To continue processing your application we still need the following documents:</p><ul>	<li>Proof of Identity (ID card, driver's license, passport)</li>	<li>Proof of Benefit (eligibility letter or benefit notice)</li></ul><p>Please upload the required documents using the secure link below: </p><p><a href='{$uploadLink}' style='display:inline-block;padding:12px 20px;background:#0d6efd;color:#ffffff;text-decoration:none;border-radius:4px;'>Upload Documents</a></p><p><strong>Important:</strong><br> Your application cannot be completed until all required documentation has been received.</p><p>If you have already submitted these documents, please disregard this message.</p><p>If you need assistance, contact us at <a href='mailto:{$supportEmail}'>{$supportEmail}</a>.</p><br><p>Kind regards,<br><strong>Lifeline Enrollment Team</strong><br>Galaxy Free Wireless<p></div>";
   
 				$mailer = new PHPMailer_Lib();
 				$mail = $mailer->load();

@@ -475,7 +475,7 @@ class Enrolls extends Controller
         "url" => $full_url,
         "utms"=>$utms,
         "ETC"=>$_POST['powered'],
-        "company"=>"True Wireless"
+        "company"=>"Galaxy Free Wireless"
             
       ];
       $this->enrollModel->saveData($data,'lifeline_records');
@@ -548,7 +548,7 @@ public function old_check()
         "utms"=>$utms,
         "phone_number" => null,
         "order_step" => "Check Coverage",
-        "company" => "True Wireless"     
+        "company" => "Galaxy Free Wireless"     
       ];
       //$check = $this->telgooProcessStep($data,'GTW',1);
       $check = $this->enrollModel->getStates('GTW');
@@ -606,7 +606,7 @@ public function old_check()
         "utms"=>$utms,
         "phone_number" => null,
         "order_step" => "Check Coverage",
-        "company" => "True Wireless",   
+        "company" => "Galaxy Free Wireless",   
       ];
       //$check = $this->telgooProcessStep($data,'GTW',1);
       $check = $this->enrollModel->getStates('GTW');
